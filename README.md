@@ -50,3 +50,18 @@ Mike|
 
 
  - 실행
+```
+$) tar xvzf kvs_20191232.tar.gz 
+$) cd kvs_20191232 
+$) make_static 
+$) ./test_static put.txt get.txt result_static.txt 
+$) cat result_static.txt 
+Texas 
+Seoul 
+
+$) make_dll
+$) ./test_dll put.txt get.txt result_dll.txt 
+$) cat result_dll.txt 
+Texas 
+Seoul 
+```
