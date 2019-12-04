@@ -14,16 +14,13 @@
  - main: 메인함수. 사용자로부터 명령어 라인에 put 과 get 요청이 적혀있는 파일명 2개와 결과 값을 저장할 파일명 1개를 입력받아, put 과 get 을 각각 차례대로 실행하고, get 요청의 결과 값을 result.txt 에 저장해주는 함수 
 
 3. 소스코드는 아래와 같이 4개의 파일로 구성되며, 각각의 파일은 아래와 같은 내용을 구현한다.
-
-	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	+ kvs.h : 헤더파일 					+
-	+ put.c : int put (char* key, char* value, int nbytes) 	+
-	+ get.c : char* get (char *key, int* nbytes) 		+
-	+ open.c : int open () 					+
-	+ close.c : void close () 				+
-	+ test_static.c : int main (int argc, char* argv[]) 	+
-	+ test_dll.c : int main (int argc, char* argv[])	+
-	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	+ kvs.h : 헤더파일 
+	+ put.c : int put (char* key, char* value, int nbytes)
+	+ get.c : char* get (char *key, int* nbytes)
+	+ open.c : int open () 
+	+ close.c : void close () 
+	+ test_static.c : int main (int argc, char* argv[])
+	+ test_dll.c : int main (int argc, char* argv[])
 
 4. 빌드
 
@@ -34,37 +31,37 @@
 5. 실행예시
  - put.txt : key, value 의 내용을 가지고 있음. 
 
-	+++++++++++++++++++++++++
-	+ Mike Seoul 		+
-	+ Hakim Sanfrancisco 	+
-	+ Ted Boston 		+
-	+ Eunji Madion 		+
-	+ Ted Texas		+
-	+++++++++++++++++++++++++
+#	+++++++++++++++++++++++++
+#	+ Mike Seoul 		+
+#	+ Hakim Sanfrancisco 	+
+#	+ Ted Boston 		+
+#	+ Eunji Madion 		+
+#	+ Ted Texas		+
+#	+++++++++++++++++++++++++
 
  - get.txt: key 를 가지고 있음.
 
-	+++++++++
-	+ Ted 	+
-	+ Mike	+
-	+++++++++
+#	+++++++++
+#	+ Ted 	+
+#	+ Mike	+
+#	+++++++++
 
  - 실행
 
-	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	+ $) tar xvzf kvs_20191232.tar.gz 			+
-	+ $) cd kvs_20191232 					+
-	+ $) make_static 					+
-	+ $) ./test_static put.txt get.txt result_static.txt 	+
-	+ $) cat result_static.txt 				+
-	+ Texas 						+
-	+ Seoul 						+
-	+							+
-	+ $) make_dll						+
-	+ $) ./test_dll put.txt get.txt result_dll.txt 		+
-	+ $) cat result_dll.txt 				+	
-	+ Texas 						+
-	+ Seoul 						+
-	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#	+ $) tar xvzf kvs_20191232.tar.gz 			+
+#	+ $) cd kvs_20191232 					+
+#	+ $) make_static 					+
+#	+ $) ./test_static put.txt get.txt result_static.txt 	+
+#	+ $) cat result_static.txt 				+
+#	+ Texas 						+
+#	+ Seoul 						+
+#	+							+
+#	+ $) make_dll						+
+#	+ $) ./test_dll put.txt get.txt result_dll.txt 		+
+#	+ $) cat result_dll.txt 				+	
+#	+ Texas 						+
+#	+ Seoul 						+
+#	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
