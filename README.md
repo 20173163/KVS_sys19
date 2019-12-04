@@ -32,8 +32,9 @@ test_dll.c | int main (int argc, char* argv[]) |
 
 #### 5. 실행예시
 * put.txt : key, value 의 내용을 가지고 있음.
-key|value|
----|---|
+
+key | value |
+--- | --- |
 Mike | Seoul |
 Hakim | Sanfrancisco | 
 Ted | Boston |
