@@ -15,13 +15,13 @@
 
 #### 3. 소스코드
 ###### 소스코드는 아래와 같이 4개의 파일로 구성되며, 각각의 파일은 아래와 같은 내용을 구현한다.
-kvs.h : 헤더파일 |
-put.c : int put (char* key, char* value, int nbytes) |
-get.c : char* get (char *key, int* nbytes) |
-open.c : int open () |
-close.c : void close () |
-test_static.c : int main (int argc, char* argv[]) |
-test_dll.c : int main (int argc, char* argv[]) |
+kvs.h | 헤더파일 |
+put.c | int put (char* key, char* value, int nbytes) |
+get.c | char* get (char *key, int* nbytes) |
+open.c | int open () |
+close.c | void close () |
+test_static.c | int main (int argc, char* argv[]) |
+test_dll.c | int main (int argc, char* argv[]) |
 
 #### 4. 빌드
 
