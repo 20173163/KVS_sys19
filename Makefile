@@ -18,13 +18,13 @@ OBJS2 = $(DLL:.c=.o)
 all: $(TARG) $(TARG2)
 # generate "static"  executable
 $(TARG): $(OBJS)
-	$(CC) -o test_static $<
+	$(CC) -o test_$(TARG) $<
 # generate "dll" executable
 $(TARG2): $(OBJS2)
-	$(CC) -o test_dll $<
+	$(CC) -o test_$(TARG2) $<
 # this is a generic rule for .o files
 %.o: %.c $(HEADER)
 	$(CC) $(OPTS) $< -o $@
 # clean line
 clean: 
-	rm -f test_static test_dll $(OBJS) $(OBJS2)
+	rm -f test_$(TARG) test_$(TARG2) $(OBJS) $(OBJS2)
