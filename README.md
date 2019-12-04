@@ -33,21 +33,19 @@ test_dll.c | int main (int argc, char* argv[]) |
 #### 5. 실행예시
 * put.txt : key, value 의 내용을 가지고 있음.
 
-put.txt |
---- |
-Mike Seoul |
-Hakim Sanfrancisco | 
-Ted Boston |
-Eunji Madion |
-Ted Texas |
+```
+Mike Seoul
+Hakim Sanfrancisco 
+Ted Boston
+Eunji Madion
+Ted Texas
+```
 
  - get.txt: key 를 가지고 있음.
- 
-get.txt|
----|
-Ted| 
-Mike|
-
+``` 
+Ted 
+Mike
+```
 
  - 실행
 ```
