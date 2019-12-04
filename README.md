@@ -42,6 +42,7 @@ Eunji | Madion |
 Ted | Texas |
 
  - get.txt: key 를 가지고 있음.
+ 
 key|
 ---|
 Ted| 
