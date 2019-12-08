@@ -5,10 +5,10 @@ OPTS = -Wall -O -c
 TARG = static
 TARG2 = dll
 # specify all source files here
-HEADER = kvs.h
 SRCS = put.c get.c open.c close.c
 STATIC = test_static.c $(SRCS)
 DLL = test_dll.c $(SRCS)
+HEADER = kvs.h
 # this translates .c files in src list to .o’s
 OBJS = $(STATIC:.c=.o)
 OBJS2 = $(DLL:.c=.o)
